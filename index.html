@@ -1,0 +1,55 @@
+<!-- 情人节快乐 demo, @xushy -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>情人节快乐</title>
+  </head>
+  <body style="background-color:pink;font-family:arial;color:#ff7803;font-size: 65px;-webkit-text-size-adjust: none;">
+    <span id="content"></span>
+    <span style="height:100%;width:100%;background-color:#05fa0d;">&nbsp;</span>
+    <script>
+      var menu = [
+          "TO ZengT小可爱：",
+          "　我问你喜欢你的专业吗",
+          "　你说现在不能回答",
+          "　因为学得还不深入",
+          "　但是喜欢啊",
+          "　它只是一种感觉",
+          "　正如我喜欢你一样",
+          "　只是看到你就会很开心",
+          "　你总说这是一层滤镜",
+          "　但是喜欢啊",
+          "　它就是这样",
+          "　让人看不清未知的困难",
+          "　但那又何妨呢",
+          "　哪里没有困难、问题和矛盾呢",
+          "　有时候",
+          "　我们需要的仅仅是一颗",
+          "　勇敢的心！",
+          " ",
+          "　　　　　　　　　　　xushy",
+          "　　　　　　　　　　2023/2/14"
+        ],
+        i = 0, j, item, html,
+        e = document.getElementById("content"),
+        doChar = function() {
+          e.innerHTML += item[j++];
+          if (j < item.length) {
+            setTimeout(doChar, 150);
+          }
+          else {
+            e.innerHTML += "<br/>";
+            doItem();
+          }
+        },
+        doItem = function() {
+          if (i < menu.length) {
+            item = menu[i++];
+            j = 0;
+            doChar();
+          }
+        };
+      doItem();
+    </script>
+  </body>
+</html>
