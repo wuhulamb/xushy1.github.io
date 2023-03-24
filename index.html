@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>情人节快乐</title>
   </head>
-  <body style="background-color:pink;font-family:arial;color:#ff7803;font-size: 65px;-webkit-text-size-adjust: none;">
+  <body style="background-color:pink;font-family:Arial;color:#ff7803;font-size: 65px;-webkit-text-size-adjust: none;">
+    <span id="surprise" style="color: cornflowerblue;font-size: 70px;text-align: center;display: block;" onclick="run()">点我有惊喜！</span>
     <span id="content"></span>
-    <span style="height:100%;width:100%;background-color:#05fa0d;">&nbsp;</span>
+    <span id="blank" style="height:100%;width:100%;background-color:#05fa0d; visibility: hidden;">&nbsp;</span>
+    <audio id="Favourite" loop="loop" preload="auto" src="./music/Mardröm-Darin_Smith&Thell.mp3"></audio>
     <script>
       var menu = [
           "TO ZengT小可爱：",
@@ -30,8 +32,11 @@
           "　　　　　　　　　　　xushy",
           "　　　　　　　　　　2023/2/14"
         ],
-        i = 0, j, item, html,
+        i = 0, j, item,
         e = document.getElementById("content"),
+        myaudio = document.getElementById("Favourite"),
+        surprise = document.getElementById("surprise"),
+        blank = document.getElementById("blank")
         doChar = function() {
           e.innerHTML += item[j++];
           if (j < item.length) {
@@ -48,8 +53,14 @@
             j = 0;
             doChar();
           }
+        },
+        run = function() {
+          surprise.style.display="none";
+          doItem();
+          blank.style.visibility="visible";
+          myaudio.play();
+          
         };
-      doItem();
     </script>
   </body>
 </html>
