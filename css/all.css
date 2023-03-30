@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    color: cornflowerblue;
+    text-align: center;
+}
+h1 {
+    font-size: 3em;
+    color: darkorange;
+    font-family: STSong;
+}
+.name {
+    color: lightskyblue;
+    font-size: 1.7em;
+    font-family: STXinwei;
+}
+a {
+    color: crimson;
+    font-size: 1.5em;
+}
+

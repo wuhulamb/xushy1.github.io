@@ -1,45 +1,21 @@
-<!-- Time's Story, @xushy1 -->
-<html>
+<!--index, @xushy1-->
+<!DOCTYPE html>
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8">
-    <title>Time's Story</title>
+    <title>元の小屋</title>
+    <link rel="icon" href="images/luf.jpg">
+    <link rel="stylesheet" href="css/all.css">
   </head>
-  <body style="background-color:bisque;font-family:YouYuan;color:#ff7803;font-size: 65px;-webkit-text-size-adjust: none;">
-    <span id="surprise" style="display: block;color: cornflowerblue;font-size: 80px;text-align: center;line-height: 750%;" onclick="run()">点我开启一段时空之旅！</span>
-    <span id="content"></span>
-    <span id="blank" style="height:100%;width:100%;background-color:#05fa0d; visibility: hidden;">&nbsp;</span>
-    <audio id="Favourite" loop="loop" preload="auto" src="./music/Mardröm-Darin_Smith&Thell.mp3"></audio>
-    <script>
-      var menu = ['这是一个关于时间的故事', '故事开始于2022年11月11日', '那是星期五的早上', '一个男孩拎着一个巨大的电脑包', '匆匆跨入值班室', '靠窗的位置上早早地坐着一个女孩', '男孩指指电脑包说，让我来吧', '女孩疑惑，侧歪着脑袋', '男孩笑了，你看着好了', '像变魔术一般', '男孩的电脑上飞快地跳跃着字符', '工作飞速地进行着', '女孩哇了一声', '等完成了工作', '女孩问男孩那个魔术', '男孩得意', '但不知怎么', '却只随便说了说变魔术的道具', '便不再多说', '女孩又问', '男孩终于好似放下了些什么', '开始从头至尾详细地讲解起来', '说着说着', '男孩笑了', '女孩问他笑什么', '男孩不语', '...', ' ', '这是男孩和女孩的第一次相遇', '男孩一直忘不了那个女孩', '这个魔术', '男孩变了很多次', '但从来没人问过他魔术是怎么变的', '有那么几次', '男孩兴致勃勃', '想给人们分享魔术背后的故事', '但总是没等他说完', '人们就不想听了', '他们只是想看他表演', '不想知道这背后的故事', '所以，渐渐地', '男孩关上了心里的那扇大门', '不再与任何人分享他的故事', '但是', '那个女孩像是有某种魔力一般', '又一次打开了他心中的那扇大门', '又一次让阳光照进了他的心里', ' ', ' ', '2022年12月18日', '那晚是世界杯的决赛', '阿根廷VS法国', '梅西VS姆巴佩', '男孩问女孩要不要一起看球', '女孩说，好', ' ', '那场比赛打了很久', '男孩和女孩边看边聊', '时间过得飞快', '男孩和女孩说', '他想阿根廷赢', '女孩问他为什么', '男孩说，梅西为这一天等了太久', ' ', '比赛很精彩', '整整打了三个小时', '最后，梅西赢了，阿根廷赢了', '男孩特别开心', ' ', '女孩道了晚安', '男孩也回了晚安', '他躺在床上', '却怎么也睡不着', '他傻傻地笑着', '慢慢地，视线模糊了', '男孩进入了梦乡', '...', ' ', ' ', '那天以后', '男孩常常想念着女孩', '想知道她在做什么', '想和她分享快乐', '想帮她分担忧伤', '想见到她', '所以，男孩时不时就会找女孩聊天', '女孩回消息总是很慢', '男孩不气，只是傻傻等着', '每到手机一响', '男孩心里的小鹿乱撞，满脸通红', ' ', '直到有一天', '男孩向女孩告白', '我喜欢你', '发完消息后', '男孩觉得时间过得很慢很慢', '伴着手机一声铃响', '女孩终于回了消息', '男孩赶忙打开来看', '不是拒绝', '男孩舒了一口气', '也不接受', '男孩有点失落', '过了许久', '男孩回女孩', '如果这是一个关于时间的故事', '我愿花一生去聆听', '...', ' ', ' ', '从那之后', '女孩再也没找过男孩聊天', '男孩也锁住了心里的那扇大门', '...', ' ', ' ', ' ', ' ', '故事到这儿就结束了', '但是如果', '如果这真的是一个关于时间的故事', '那么，那个男孩一定还会再次遇到', '那个打开他心中那扇大门的女孩吧', ' ', ' ', ' '],
-        i = 0, j, item,
-        e = document.getElementById("content"),
-        myaudio = document.getElementById("Favourite"),
-        surprise = document.getElementById("surprise"),
-        blank = document.getElementById("blank")
-        doChar = function() {
-          e.innerHTML += item[j++];
-          if (j < item.length) {
-            setTimeout(doChar, 150);
-          }
-          else {
-            e.innerHTML += "<br/>";
-            doItem();
-          }
-        },
-        doItem = function() {
-          if (i < menu.length) {
-            item = menu[i++];
-            j = 0;
-            doChar();
-          }
-        },
-        run = function() {
-          surprise.style.display="none";
-          doItem();
-          blank.style.visibility="visible";
-          myaudio.play();
-          
-        };
-    </script>
+  <body>
+    <p>
+      <h1>欢迎参观<span class="name">元</span>の小屋</h1>
+    </p>
+    <img src="images/who-am-i.jpg" alt="spiderman" height="400">
+
+    <p>&nbsp;</p>
+    <p>
+      <a href="favorites/index.html"><h2>FAVORITES</h2></a>
+    </p>
   </body>
 </html>

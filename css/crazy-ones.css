@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+}
+h1 {
+    font-size: 2.5em;
+    color: khaki;
+    font-family: Georgia;
+}
+.author {
+    font-size: 1.5em;
+    color: aqua;
+    font-family: Tahoma;
+}
+p {
+    color: floralwhite;
+    font-size: 1.5em;
+}
+
+
