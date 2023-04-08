@@ -1,20 +1,33 @@
 body {
-    background-color: black;
-    color: cornflowerblue;
-    text-align: center;
+    background-color: azure;
 }
-h1 {
+.home-link {
+    display: flex;
+    float: left;
+    align-items: center;
+}
+.menu {
+    float: right;
+    padding: 20px;
+
+}
+.fixed-header {
+    position: fixed;
+    box-shadow: 0 0 10px rgba(14,14,14,0.26);
+    background-color: yellow;
+    width: 1200px;
+}
+.list-item {
+    font-size: 1.8em;
+    display: inline-block;
+    margin: 0 10px;
+}
+#name {
     font-size: 3em;
-    color: darkorange;
-    font-family: STSong;
-}
-.name {
-    color: lightskyblue;
-    font-size: 1.7em;
+    color: forestgreen;
     font-family: STXinwei;
 }
 a {
-    color: crimson;
-    font-size: 1.5em;
+    text-decoration: none;
 }
 

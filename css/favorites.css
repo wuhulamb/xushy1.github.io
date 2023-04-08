@@ -1,7 +1,43 @@
 body {
     background-color: azure;
 }
+.home-link {
+    display: flex;
+    float: left;
+    align-items: center;
+}
+.content {
+    float: right;
+    padding: 20px;
+}
+.header-container {
+    position: relative;
+    padding: 6px 100px;
+
+}
+.fixed-header {
+    position: fixed;
+    box-shadow: 0 0 10px rgba(14,14,14,0.26);
+
+}
+.list-item {
+    font-size: 1.8em;
+    display: inline-block;
+    margin: 0 10px;
+}
+#name {
+    font-size: 3em;
+    color: forestgreen;
+    font-family: STXinwei;
+}
 a {
+    text-decoration: none;
+}
+h2 {
+    color: orangered;
+    font-size: 2em;
+}
+p {
     color: salmon;
-    font-size: 1.5em;
+    font-size: 0.8em;
 }
